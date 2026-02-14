@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+    <div id="card">
+        <div id="message">
+            Junie<span id="he">&#10084</span>,<br>
+            <br>Je t'aime. J'en ai été contraint. Ton regard, tes yeux, ton sourire, ta prestance, ta simplicité, ton originalité se sont mis ensemble et ont kidnappé mon coeur. Ils m'ont demandé de t'aimer en rançon. <br>
+            <br>Pour garantir la sécurité de mon pauvre coeur, <span id="ever">Je t'aimerai pour toujours</span>. <br>
+        </div>
+        <div id="heart"></div>
+         <div id="text">
+                Mal posso esperar para poder te abraçar
+            </div>
+    </div>
+    <script>
+        heart = document.getElementById("heart")
+        function moveHeart(){
+            heart.style.transition = "all 1s linear";
+            heart.style.top = Math.random()*90 + "%";
+            heart.style.left = Math.random()*90 + "%";
+        }
+        setInterval(moveHeart, 5000);
+    </script>
+</body>
+</html>
